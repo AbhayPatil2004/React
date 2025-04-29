@@ -1,8 +1,8 @@
 function customRender(reactElement, mainContainer) {
+    
     const domElement = document.createElement(reactElement.type);
-    domElement.innerHTML = reactElement.children; // Fix typo
+    domElement.innerHTML = reactElement.children; 
 
-    // Set attributes properly
     for (const prop in reactElement.props) {
         domElement.setAttribute(prop, reactElement.props[prop]);
     }
