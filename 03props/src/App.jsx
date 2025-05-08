@@ -16,9 +16,9 @@ function App() {
       <div className='flex mx-auto w-full h-screen items-center' >
         <Card name = "Abhay Ramkrushna Patil"/>
       </div>
-      <div className='flex mx-auto w-full h-screen items-center' >
+      {/* <div className='flex mx-auto w-full h-screen items-center' >
         <Card name = {name}/>
-      </div>
+      </div> */}
     </>
   ) 
 }
