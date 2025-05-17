@@ -22,8 +22,16 @@ function App() {
     setTodos((prev) => prev.filter((todo) => todo.id !== id))
   }
 
+  // const toggleComplete = (id) => {
+  //   setTodos((prev) => prev.map((prevTodo) => prevTodo === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo))
+  // }
+
   const toggleComplete = (id) => {
-    setTodos((prev) => prev.map((prevTodo) => prevTodo === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo))
+    //console.log(id);
+    setTodos((prev) => 
+    prev.map((prevTodo) => 
+      prevTodo.id === id ? { ...prevTodo, 
+        completed: !prevTodo.completed } : prevTodo))
   }
 
 
